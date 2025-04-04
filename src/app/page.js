@@ -1,13 +1,16 @@
-import Button from "./components/Button";
+import Button from "../components/Button";
+import Navbar from "../components/NavBar";
+import Footer from "../components/Footer";
 
 export default function Home() {
   return (
-    <main className="flex flex-col items-center justify-center min-h-screen bg-gray-900 text-white p-10">
-      <h1 className="text-4xl font-bold">Tailwind CSS v4 Ativado!</h1>
-      <p className="mt-4 text-lg">Agora podemos começar a construir nossa aplicação.</p>
-      <button className="mt-6 px-6 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition">
-        Clique Aqui
-      </button>
-    </main>
+    <div className="min-h-screen bg-gray-100">
+      <Navbar />
+      <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100 p-4">
+        <h1 className="text-2xl font-bold">Meu Projeto Next.js</h1>
+        <Button text="Clique Aqui" />
+      </div>
+      <Footer />
+    </div>
   );
 }
